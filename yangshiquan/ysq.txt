@@ -1,0 +1,15 @@
+提交一溪而内容
+回滚操作：
+  git checkout 文件列表 （回滚已修改的文件）
+  git checkout . （回滚所有已修改的文件）
+
+  git reset
+      --hard 回滚快照，覆盖暂存区，覆盖工作目录
+      --soft 只会回滚快照
+      --mixed(默认) 只会回滚快照和覆盖暂存区，不覆盖工作目录
+
+  git reset --hard HEAD （用本地仓库的最新快照覆盖工作目录和暂存区）
+
+  回滚最后一次提交
+  git reset --hard 倒数第二次commitID
+  git reset --hard HEAD^
